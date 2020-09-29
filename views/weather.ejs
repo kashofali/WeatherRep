@@ -1,0 +1,35 @@
+<%- include("partial/header") -%>
+<nav class="navbar navbar-light">
+  <a class="navbar-brand" href="/">WeatherHub</a>
+  <form class="form-inline" action="/" method="post">
+    <input class="form-control mr-sm-2" type="search" name="cityName" placeholder="Search">
+    <button class="btn btn-primary btn-sm my-2 my-sm-0" type="submit" name="button">Search</button>
+  </form>
+</nav>
+<div class="jumbotron-fluid weatherdiv">
+  <h1 class="display-2" ><%= city %></h1>
+  <h2 class="display-4 head2">Temperature is <%= temp %>&deg Celcius</h2>
+  <h4 class="feels">feels Like <%= feelsLike %>&deg</h4>
+  <h4 class="head4"><%= des %></h4>
+  <table class="table table-borderless">
+    <tr>
+      <td>Humidity</td>
+      <td><%= humidity %>%</td>
+    </tr>
+    <tr>
+      <td>Atmospheric Pressure</td>
+      <td><%= pressure %> hPa </td>
+    </tr>
+    <tr>
+      <td>Wind Speed</td>
+      <td><%= windSpeed %>m/s</td>
+    </tr>
+    <tr>
+      <td>Wind Direction</td>
+      <td><%= windDir %>&deg (<%= windDird2d %>) </td>
+    </tr>
+  </table>
+</div>
+
+
+<%- include("partial/footer") -%>
