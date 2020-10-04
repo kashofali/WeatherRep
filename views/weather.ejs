@@ -1,11 +1,17 @@
-<%- include("partial/header") -%>
+<%- include("partial/header") -%> <!-- header -->
+
+<!-- navbar -->
 <nav class="navbar navbar-light">
   <a class="navbar-brand" href="/">WeatherHub</a>
+
+<!-- secondary searchbox   -->
   <form class="form-inline" action="/" method="post">
     <input class="form-control mr-sm-2" type="search" name="cityName" placeholder="Search">
     <button class="btn btn-primary btn-sm my-2 my-sm-0" type="submit" name="button">Search</button>
   </form>
 </nav>
+
+<!-- weather report -->
 <div class="jumbotron-fluid weatherdiv">
   <h1 class="display-2" ><%= city %></h1>
   <h2 class="display-4 head2">Temperature is <%= temp %>&deg Celcius</h2>
@@ -32,4 +38,4 @@
 </div>
 
 
-<%- include("partial/footer") -%>
+<%- include("partial/footer") -%> <!-- footer -->

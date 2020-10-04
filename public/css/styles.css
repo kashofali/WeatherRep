@@ -16,9 +16,7 @@ i{
   padding: 0 1.5%;
 }
 
-.table{
-  color: #0f3057;
-}
+/* home page */
 
 .homediv{
   background-image: url("clouds.jpg");
@@ -31,6 +29,21 @@ i{
   background-size: cover;
   text-align: center;
 }
+
+.lable{
+  font-size: 2.5rem
+}
+
+.or{
+  padding: 2.5rem 0;
+}
+
+.inp{
+  display: inline;
+  width: 15.6rem;
+}
+
+/* weather page */
 
 .weatherdiv{
   background-image: url("clouds.jpg");
@@ -59,25 +72,18 @@ i{
   text-align: left;
 }
 
-.or{
-  padding: 2.5rem 0;
+.table{
+  color: #0f3057;
 }
 
-.inp{
-  display: inline;
-  width: 15.6rem;
-}
-
+/* error page */
 .errordiv{
   height: 31rem;
   text-align: center;
   padding-top: 12.5rem;
 }
 
-.lable{
-  font-size: 2.5rem
-}
-
+/* footer */
 .footer {
   background-color: #0f3057;
   padding: 7% 5%;

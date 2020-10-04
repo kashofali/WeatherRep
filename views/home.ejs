@@ -1,27 +1,36 @@
-<%- include("partial/header") -%>
+<%- include("partial/header") -%>  <!-- header -->
+
+<!-- navbar -->
+
 <nav class="navbar navbar-light">
   <a class="navbar-brand" href="/">WeatherRep</a>
 </nav>
+
+<!-- primary searchBox -->
 <div class="homediv container">
   <h1 class="display-4">Get weather Condition</h1><br>
   <h3 class="display-4">by</h3>
   <div class="row">
+
+<!-- city searchBox -->
     <div class="col-lg-5">
-      <form class="searchBox" action="/" method="post">
+      <form action="/" method="post">
         <div class="form-group">
-          <label class="lable lead">Name</label><br>
+          <label class="lable">Name</label><br>
           <input type="text" class="form-control inp" name="cityName">
         </div>
         <button class="btn btn-primary btn-small" type="submit" name="button">Search</button>
       </form>
     </div>
+
+<!-- zipCode searchBox -->
     <div class="col-lg-2 ">
       <h5 class="display-4 or">Or</h5>
     </div>
     <div class="col-lg-5">
       <form class="searchBox" action="/" method="post">
         <div class="form-group">
-          <label class="lable lead">Zip Code</label><br>
+          <label class="lable">Zip Code</label><br>
           <div class="container">
             <div class="row">
               <div class="col-lg-3 col-sm-3">
@@ -50,4 +59,4 @@
   </div>
 </div>
 
-<%- include("partial/footer") -%>
+<%- include("partial/footer") -%> <!-- footer -->

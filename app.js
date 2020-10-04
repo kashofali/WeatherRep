@@ -11,8 +11,6 @@ const app = express();
 let countryID = [];
 countryID = country.ls("iso2");
 
-const blue = "blue";
-
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
