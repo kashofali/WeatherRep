@@ -22,7 +22,7 @@ app.get("/", function(req, res){
 });
 
 app.post("/", function(req, res){
-  const apiKey = "2369b29f592b846dcf8f05a1f3416d55";
+  const apiKey = "Your API key";
   let cityName = req.body.cityName;
   const zipCode = req.body.zip;
   const countryCode = req.body.countryCode;
